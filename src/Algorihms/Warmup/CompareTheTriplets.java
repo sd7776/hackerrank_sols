@@ -23,5 +23,41 @@ Output format:
 Return an array of two integers denoting the respective comparison points earned by Alice and Bob.
 * */
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class CompareTheTriplets {
+    public static void main(String[] args) {
+        ArrayList<Integer> a = new ArrayList<>(Arrays.asList(5,6,7));
+        ArrayList<Integer> b = new ArrayList<>(Arrays.asList(3,6,10));
+
+        System.out.println(compareTriplets(a, b));
+    }
+
+    // Complete the compareTriplets function below.
+    static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
+        List<Integer> results = new ArrayList<>();
+
+        if(a.size() != b.size()) {
+            System.out.println("The array size must be ");
+            return null;
+        }
+        int alice =0 , bob = 0;
+
+        for(int i=0; i<a.size(); i++)
+        {
+            if(a.get(i) > b.get(i))
+            {
+                alice++;
+            }
+            if(a.get(i) < b.get(i))
+            {
+                bob++;
+            }
+        }
+        results.add(alice);
+        results.add(bob);
+        return results;
+    }
 }
