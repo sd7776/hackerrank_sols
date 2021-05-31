@@ -1,3 +1,5 @@
+package Interview_Preparation_Kit.WarmUpChallenges;
+
 import java.util.ArrayList;
 
 public class HourGlassSum {

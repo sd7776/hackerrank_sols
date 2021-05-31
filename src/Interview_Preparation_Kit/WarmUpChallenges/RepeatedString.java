@@ -1,3 +1,5 @@
+package Interview_Preparation_Kit.WarmUpChallenges;
+
 public class RepeatedString {
     public static void main(String[] args) {
         System.out.println(repeatedString("abaa", 10));

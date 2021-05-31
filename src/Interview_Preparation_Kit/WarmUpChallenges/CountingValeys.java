@@ -37,6 +37,6 @@ public class CountingValeys
 
     public static void main(String[] args)
     {
-        countingValleys(10, "DDUDUDUUDU" );
+        System.out.println(countingValleys(10, "DDUDUDUUDU" ));
     }
 }
